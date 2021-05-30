@@ -340,7 +340,7 @@ if(WIN32)
             CMAKE_RELWITHDEBINFO_POSTFIX
             )
         if(postfix_var STREQUAL "CMAKE_DEBUG_POSTFIX")
-            set(_POSTFIX_DEBUG "d")
+            set(_POSTFIX_DEBUG "_d")
         else()
             set(_POSTFIX_DEBUG "")
         endif()
