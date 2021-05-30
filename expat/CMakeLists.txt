@@ -371,7 +371,7 @@ foreach(postfix_var
         CMAKE_RELWITHDEBINFO_POSTFIX
         )
     if(WIN32 AND postfix_var STREQUAL "CMAKE_DEBUG_POSTFIX")
-        set(_POSTFIX_DEBUG "d")
+        set(_POSTFIX_DEBUG "_d")
     else()
         set(_POSTFIX_DEBUG "")  # needs a reset because of being looped
     endif()
