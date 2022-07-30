@@ -426,7 +426,7 @@ foreach(build_type_upper
         RELWITHDEBINFO
         )
     if(WIN32 AND build_type_upper STREQUAL "DEBUG")
-        set(_POSTFIX_DEBUG "d")
+        set(_POSTFIX_DEBUG "_d")
     else()
         set(_POSTFIX_DEBUG "")  # needs a reset because of being looped
     endif()
